@@ -1,0 +1,112 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 50px 0px;
+
+    .loader {
+        margin-top: 100px;
+    }
+
+    .imageCont {
+        width: 80%;
+        height: 80%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rnd{
+            position: relative;
+
+            .textCont {
+                background-color: rgba(31, 31, 31, 0.5);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 1.5rem;
+                height: 100%;
+                padding: 20px 10px;
+            }
+
+            .deleteCont{
+                position: absolute;
+                top: 0px;
+                right: 10px;
+
+                .deleteIcon{
+                    font-size: 1.5rem;
+                    color: #e64545;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .inputMainCont {
+        width: 80%;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .inputForm {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+
+            label {
+                font-size: 1rem;
+            }
+
+            input {
+                width: 300px;
+                height: 40px;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                outline: none;
+            }
+
+            button {
+                width: 120px;
+                height: 50px;
+                border-radius: 5px;
+                font-size: 1.2rem;
+                cursor: pointer;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        .inputMainCont {
+            h2{
+                font-size: 1.5rem;
+            }
+
+            .inputForm {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
