@@ -6,6 +6,10 @@ A React Application to fetch random image and functionality to add text boxes on
 
 React, HTML, SCSS, Bootstrap
 
+## Deploy Link
+
+Netlify Deploy Link - https://imageoverlay.netlify.app/
+
 ## Run Locally
 
 Go to the project directory
